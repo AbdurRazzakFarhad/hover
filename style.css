@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+h2,
+p {
+  color: white;
+  font-size: 27px;
+}
+
+.inner-content h2 {
+  margin-top: 190px;
+}
+
+.main {
+  width: 400px;
+  height: auto;
+  margin: 60px auto;
+}
+
+.hover {
+  position: relative;
+}
+
+.inner-content {
+  text-align: center;
+  width: 100%;
+  position: absolute;
+  background: rgba(26, 27, 26, 0.6);
+  top: 0;
+  left: 0;
+  transition: 0.3s;
+  opacity: 0;
+  height: 0;
+  width: 0;
+}
+
+.hover:hover .inner-content {
+  height: 100%;
+  width: 100%;
+  visibility: visible;
+  opacity: 1;
+  height: 100%;
+  width: 100%;
+}
